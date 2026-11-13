@@ -1,0 +1,443 @@
+/* General */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #171717;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: #795f10;
+}
+
+a:hover {
+  color: #a17d12;
+}
+
+/* Cabecera, navegación y pie */
+.site-header,
+.main-nav,
+.score-strip,
+.site-footer {
+  background: #111;
+  color: #fff;
+}
+
+.header-inner,
+.nav-inner,
+.footer-inner,
+.page-shell {
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.header-inner,
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-inner {
+  min-height: 78px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.brand img {
+  display: block;
+}
+
+.brand-accent,
+.score-strip strong,
+.footer-inner a,
+.hero h1 span {
+  color: #d4af37;
+}
+
+.tagline {
+  color: #ccc;
+}
+
+.nav-inner,
+.score-strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-inner {
+  gap: 6px;
+}
+
+.nav-inner a {
+  padding: 12px 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-inner a:hover,
+.nav-inner a[aria-current="page"] {
+  background: #d4af37;
+  color: #111;
+}
+
+.score-strip {
+  justify-content: center;
+  gap: 8px 24px;
+  padding: 8px;
+  font-size: 0.85rem;
+}
+
+.score-label,
+.eyebrow {
+  color: #795f10;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.score-label,
+.hero .eyebrow {
+  color: #d4af37;
+}
+
+/* Contenido */
+.page-shell {
+  padding: 36px 0 60px;
+}
+
+.page-heading {
+  max-width: 760px;
+  margin-bottom: 26px;
+}
+
+.page-heading h1 {
+  margin: 5px 0;
+  font-size: 2.5rem;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  min-height: 290px;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 28px;
+  padding: 36px 6%;
+  border-radius: 12px;
+  background: #171717;
+  color: #fff;
+}
+
+.hero > div {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.hero h1 {
+  margin: 8px 0;
+  font-size: 3rem;
+}
+
+.hero-ball {
+  position: absolute;
+  right: 8%;
+  color: #d4af37;
+  font-size: 12rem;
+  opacity: 0.2;
+}
+
+.button-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  border-radius: 5px;
+  background: #d4af37;
+  color: #111;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button-link:hover {
+  background: #fff;
+  color: #111;
+}
+
+.content-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 290px;
+  gap: 22px;
+  margin-bottom: 24px;
+}
+
+.panel,
+.competition-card,
+.news-card {
+  margin-bottom: 20px;
+  padding: 22px;
+  border: 1px solid #e5dfcf;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.panel h2,
+.competition-card h2,
+.news-copy h2 {
+  margin-top: 0;
+}
+
+.panel p,
+.competition-card p,
+.news-copy p,
+.placeholder-card p {
+  color: #696969;
+}
+
+.panel .eyebrow,
+.competition-card .eyebrow,
+.news-copy .eyebrow {
+  color: #795f10;
+}
+
+.section-heading,
+.news-teaser {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.section-heading {
+  margin-bottom: 16px;
+}
+
+.section-heading h2,
+.news-teaser h2 {
+  margin: 0;
+}
+
+.section-heading a,
+.text-link,
+.news-copy a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Tabla y mapa */
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+caption {
+  padding-bottom: 8px;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 11px;
+  border-bottom: 1px solid #e5dfcf;
+}
+
+thead th,
+.accent-panel,
+.competition-mark,
+.live-pill,
+.attribute-list code {
+  background: #f8f1db;
+}
+
+tbody th,
+.attribute-list code {
+  color: #795f10;
+}
+
+.table-note td {
+  color: #696969;
+}
+
+.map-frame {
+  overflow: hidden;
+}
+
+.map-frame iframe {
+  display: block;
+  width: 100%;
+  height: 350px;
+  border: 0;
+}
+
+/* Tarjetas */
+.competition-grid,
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.competition-card {
+  display: flex;
+  gap: 14px;
+  min-height: 170px;
+  margin: 0;
+}
+
+.competition-mark {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border-radius: 50%;
+  color: #795f10;
+  font-weight: bold;
+}
+
+.competition-card p:last-child {
+  margin-bottom: 0;
+}
+
+.live-pill {
+  padding: 5px 9px;
+  border-radius: 20px;
+  color: #795f10;
+  font-weight: bold;
+}
+
+.news-card {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.news-art {
+  display: flex;
+  min-height: 145px;
+  align-items: center;
+  justify-content: center;
+  background: #222;
+  color: #fff;
+  font-weight: bold;
+}
+
+.art-gold {
+  background: #d4af37;
+  color: #111;
+}
+
+.art-amber {
+  background: #8a7026;
+}
+
+.news-copy {
+  padding: 18px;
+}
+
+.attribute-list code {
+  padding: 2px 5px;
+}
+
+.external-reference {
+  padding-top: 12px;
+  border-top: 1px solid #e5dfcf;
+}
+
+.news-teaser {
+  margin-bottom: 24px;
+}
+
+/* Pie y plantilla */
+.footer-inner {
+  min-height: 72px;
+  gap: 12px;
+}
+
+.placeholder-card {
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px dashed #c9b979;
+  background: #fffdf7;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 700px) {
+  .header-inner,
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 0;
+  }
+
+  .nav-inner {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .content-layout,
+  .competition-grid,
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 260px;
+    padding: 28px;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-ball {
+    right: -25px;
+    font-size: 9rem;
+  }
+
+  .page-heading h1 {
+    font-size: 2rem;
+  }
+
+  .panel {
+    padding: 18px;
+  }
+
+  .section-heading,
+  .news-teaser {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  th,
+  td {
+    padding: 9px;
+    white-space: nowrap;
+  }
+
+  .map-frame iframe {
+    height: 280px;
+  }
+}
