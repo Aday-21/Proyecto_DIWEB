@@ -1,443 +1,506 @@
 /* General */
+/* Se aplica a todos los elementos del HTML (*), presente en todas las páginas (index.html, pagina2.html, pagina3.html, plantilla.html), para establecer el modelo de caja universal (box-sizing). */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+/* Define el estilo base del cuerpo (<body>) en todas las páginas (index.html, pagina2.html, pagina3.html, plantilla.html), configurando fuente, márgenes y colores generales. */
 body {
-  margin: 0;
-  background: #fff;
-  color: #171717;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+    margin: 0;
+    background: #fff;
+    color: #171717;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
+/* Se aplica a todas las etiquetas áncora (<a>) de todas las páginas para fijar su color principal por defecto. */
 a {
-  color: #795f10;
+    color: #795f10;
 }
 
+/* Cambia el color del texto de los enlaces (<a>) al pasar el cursor por encima (hover) en cualquier archivo HTML. */
 a:hover {
-  color: #a17d12;
+    color: #a17d12;
 }
 
 /* Cabecera, navegación y pie */
+/* Define el fondo oscuro y texto blanco comunes para la cabecera, barra de navegación, marcador y pie en index.html, pagina2.html, pagina3.html y plantilla.html. */
 .site-header,
 .main-nav,
 .score-strip,
 .site-footer {
-  background: #111;
-  color: #fff;
+    background: #111;
+    color: #fff;
 }
 
+/* Establece el ancho máximo y centra los contenedores principales de la cabecera, navegación, pie y cuerpo (.page-shell) en todas las páginas. */
 .header-inner,
 .nav-inner,
 .footer-inner,
 .page-shell {
-  width: 90%;
-  max-width: 1120px;
-  margin: 0 auto;
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
 }
 
+/* Configura una disposición flexible en línea con elementos alineados y distribuidos para las secciones internas de cabecera y pie en index.html, pagina2.html, pagina3.html y plantilla.html. */
 .header-inner,
 .footer-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+/* Asegura una altura mínima específica de 78px para el contenedor interno de la cabecera en todas las páginas del proyecto. */
 .header-inner {
-  min-height: 78px;
+    min-height: 78px;
 }
 
+/* Estiliza el logotipo y enlace de la marca en la cabecera de index.html, pagina2.html, pagina3.html y plantilla.html, alineando imagen y texto. */
 .brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
 }
 
+/* Evita comportamientos en bloque no deseados en la imagen del logotipo dentro de la marca de la cabecera en todas las páginas. */
 .brand img {
-  display: block;
+    display: block;
 }
 
+/* Aplica un color de acento dorado en elementos destacados como el texto del logotipo, negritas del marcador, enlaces del pie y subtítulos del hero (presente en index.html, pagina2.html, pagina3.html y plantilla.html). */
 .brand-accent,
 .score-strip strong,
 .footer-inner a,
 .hero h1 span {
-  color: #d4af37;
+    color: #d4af37;
 }
 
+/* Da un color de texto gris claro al subtítulo o lema ("tagline") situado en la cabecera de todas las páginas. */
 .tagline {
-  color: #ccc;
+    color: #ccc;
 }
 
+/* Organiza en disposición flexible y envolvente los elementos internos de la barra de navegación y la tira de marcadores en todos los archivos HTML. */
 .nav-inner,
 .score-strip {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+/* Añade un espacio de separación (gap) entre los enlaces de la barra de navegación principal en todas las páginas. */
 .nav-inner {
-  gap: 6px;
+    gap: 6px;
 }
 
+/* Aplica espaciado y estilo de texto blanco sin subrayado a cada enlace individual de la barra de navegación (.main-nav) en todas las páginas. */
 .nav-inner a {
-  padding: 12px 16px;
-  color: #fff;
-  text-decoration: none;
+    padding: 12px 16px;
+    color: #fff;
+    text-decoration: none;
 }
 
+/* Cambia el color de fondo y texto al pasar el cursor o en la página activa (aria-current="page") dentro de la barra de navegación en index.html, pagina2.html y pagina3.html. */
 .nav-inner a:hover,
 .nav-inner a[aria-current="page"] {
-  background: #d4af37;
-  color: #111;
+    background: #d4af37;
+    color: #111;
 }
 
+/* Centra el contenido, añade espaciado y define tamaño de fuente pequeño para la tira de resultados en la cabecera de todas las páginas. */
 .score-strip {
-  justify-content: center;
-  gap: 8px 24px;
-  padding: 8px;
-  font-size: 0.85rem;
+    justify-content: center;
+    gap: 8px 24px;
+    padding: 8px;
+    font-size: 0.85rem;
 }
 
+/* Define el color, tamaño y peso de fuente para las etiquetas secundarias tipo "eyebrow" o rótulos de marcadores en index.html, pagina2.html, pagina3.html y plantilla.html. */
 .score-label,
 .eyebrow {
-  color: #795f10;
-  font-size: 0.75rem;
-  font-weight: bold;
+    color: #795f10;
+    font-size: 0.75rem;
+    font-weight: bold;
 }
 
+/* Sobrescribe el color de los rótulos en el marcador y en el bloque principal hero (index.html) para darles un tono dorado destacado. */
 .score-label,
 .hero .eyebrow {
-  color: #d4af37;
+    color: #d4af37;
 }
 
 /* Contenido */
+/* Define los márgenes interiores superior e inferior para el contenedor principal (<main class="page-shell">) en todas las páginas (index.html, pagina2.html, pagina3.html, plantilla.html). */
 .page-shell {
-  padding: 36px 0 60px;
+    padding: 36px 0 60px;
 }
 
+/* Limita el ancho máximo y establece margen inferior para los encabezados de sección principales dentro del cuerpo en index.html, pagina2.html, pagina3.html y plantilla.html. */
 .page-heading {
-  max-width: 760px;
-  margin-bottom: 26px;
+    max-width: 760px;
+    margin-bottom: 26px;
 }
 
+/* Ajusta los márgenes y define un tamaño de fuente grande (2.5rem) para los títulos principales de cabecera de página (<h1>) en pagina2.html, pagina3.html y plantilla.html. */
 .page-heading h1 {
-  margin: 5px 0;
-  font-size: 2.5rem;
+    margin: 5px 0;
+    font-size: 2.5rem;
 }
 
+/* Diseña el bloque destacado ("hero") de la página de inicio (**index.html**) con fondo oscuro, esquinas redondeadas y posición relativa. */
 .hero {
-  position: relative;
-  display: flex;
-  min-height: 290px;
-  align-items: center;
-  overflow: hidden;
-  margin-bottom: 28px;
-  padding: 36px 6%;
-  border-radius: 12px;
-  background: #171717;
-  color: #fff;
+    position: relative;
+    display: flex;
+    min-height: 290px;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 28px;
+    padding: 36px 6%;
+    border-radius: 12px;
+    background: #171717;
+    color: #fff;
 }
 
-.hero > div {
-  position: relative;
-  z-index: 1;
-  max-width: 600px;
+/* Asegura que el contenido interno del bloque hero mantenga posición relativa y un ancho máximo de 600px en **index.html**. */
+.hero>div {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
 }
 
+/* Ajusta los márgenes y tamaño de fuente grande (3rem) para el título principal dentro del bloque hero en **index.html**. */
 .hero h1 {
-  margin: 8px 0;
-  font-size: 3rem;
+    margin: 8px 0;
+    font-size: 3rem;
 }
 
+/* Posiciona de manera absoluta el icono decorativo de balón de fútbol gigante en el fondo del bloque hero de **index.html**. */
 .hero-ball {
-  position: absolute;
-  right: 8%;
-  color: #d4af37;
-  font-size: 12rem;
-  opacity: 0.2;
+    position: absolute;
+    right: 8%;
+    color: #d4af37;
+    font-size: 12rem;
+    opacity: 0.2;
 }
 
+/* Estiliza los botones de enlace destacados con fondo dorado y bordes redondeados en **index.html** y **pagina3.html**. */
 .button-link {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 16px;
-  border-radius: 5px;
-  background: #d4af37;
-  color: #111;
-  font-weight: bold;
-  text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    border-radius: 5px;
+    background: #d4af37;
+    color: #111;
+    font-weight: bold;
+    text-decoration: none;
 }
 
+/* Cambia el color de fondo a blanco al pasar el cursor (hover) sobre los botones de enlace destacados en **index.html** y **pagina3.html**. */
 .button-link:hover {
-  background: #fff;
-  color: #111;
+    background: #fff;
+    color: #111;
 }
 
+/* Organiza la estructura principal de contenido y barra lateral en formato de cuadrícula (grid) de dos columnas en **index.html**, **pagina2.html** y **plantilla.html**. */
 .content-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 290px;
-  gap: 22px;
-  margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 290px;
+    gap: 22px;
+    margin-bottom: 24px;
 }
 
+/* Define el estilo común de paneles, tarjetas de competición y noticias con bordes, esquinas redondeadas y fondo blanco en **index.html**, **pagina2.html**, **pagina3.html** y **plantilla.html**. */
 .panel,
 .competition-card,
 .news-card {
-  margin-bottom: 20px;
-  padding: 22px;
-  border: 1px solid #e5dfcf;
-  border-radius: 10px;
-  background: #fff;
+    margin-bottom: 20px;
+    padding: 22px;
+    border: 1px solid #e5dfcf;
+    border-radius: 10px;
+    background: #fff;
 }
 
+/* Elimina el margen superior de los títulos de segundo nivel (<h2>) dentro de paneles y tarjetas en todas las páginas. */
 .panel h2,
 .competition-card h2,
 .news-copy h2 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
+/* Define el color gris de texto para los párrafos dentro de paneles, tarjetas de competición y noticias en **index.html**, **pagina2.html**, **pagina3.html** y **plantilla.html**. */
 .panel p,
 .competition-card p,
 .news-copy p,
 .placeholder-card p {
-  color: #696969;
+    color: #696969;
 }
 
+/* Aplica el color dorado/marrón característico a los subtítulos de categoría (.eyebrow) en paneles y tarjetas de todas las páginas. */
 .panel .eyebrow,
 .competition-card .eyebrow,
 .news-copy .eyebrow {
-  color: #795f10;
+    color: #795f10;
 }
 
+/* Organiza los encabezados de sección y avisos de noticias en disposición flexible alineada horizontalmente en **index.html** y **pagina2.html**. */
 .section-heading,
 .news-teaser {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
 }
 
+/* Añade un margen inferior específico para los encabezados de sección en el cuerpo de **index.html** y **pagina2.html**. */
 .section-heading {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
+/* Elimina los márgenes de los títulos de sección y adelantos de noticias para mantener un flujo ordenado en **index.html** y **pagina2.html**. */
 .section-heading h2,
 .news-teaser h2 {
-  margin: 0;
+    margin: 0;
 }
 
+/* Configura el estilo de texto en negrita y sin subrayado para enlaces situados en encabezados, textos y copias de noticias en **index.html**, **pagina2.html** y **pagina3.html**. */
 .section-heading a,
 .text-link,
 .news-copy a {
-  font-weight: bold;
-  text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /* Tabla y mapa */
+/* Permite la barra de desplazamiento horizontal en dispositivos pequeños para contenedores de tablas (.table-wrap) en **index.html** y **pagina2.html**. */
 .table-wrap {
-  overflow-x: auto;
+    overflow-x: auto;
 }
 
+/* Establece el ancho completo, colapso de bordes y alineación de texto a la izquierda para las tablas de clasificación y resultados en **index.html** y **pagina2.html**. */
 table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
 }
 
+/* Añade relleno inferior y alinea a la izquierda la leyenda (<caption>) de las tablas en **index.html** y **pagina2.html**. */
 caption {
-  padding-bottom: 8px;
-  text-align: left;
+    padding-bottom: 8px;
+    text-align: left;
 }
 
+/* Aplica relleno interior y borde inferior a las celdas de encabezado (th) y datos (td) en las tablas de **index.html** y **pagina2.html**. */
 th,
 td {
-  padding: 11px;
-  border-bottom: 1px solid #e5dfcf;
+    padding: 11px;
+    border-bottom: 1px solid #e5dfcf;
 }
 
+/* Define un fondo crema claro para los encabezados de tabla, paneles de acento, marcas, pastillas en vivo y código en listas de atributos en **index.html**, **pagina2.html** y **pagina3.html**. */
 thead th,
 .accent-panel,
 .competition-mark,
 .live-pill,
 .attribute-list code {
-  background: #f8f1db;
+    background: #f8f1db;
 }
 
+/* Aplica color de texto dorado a las celdas de encabezado en el cuerpo de las tablas (tbody th) y etiquetas de código en **index.html**, **pagina2.html** y **pagina3.html**. */
 tbody th,
 .attribute-list code {
-  color: #795f10;
+    color: #795f10;
 }
 
+/* Establece un color de texto gris para las notas a pie de tabla (.table-note td) en **index.html** y **pagina2.html**. */
 .table-note td {
-  color: #696969;
+    color: #696969;
 }
 
+/* Oculta desbordamientos en el contenedor del mapa insertado (iframe) dentro de la página de inicio (**index.html**). */
 .map-frame {
-  overflow: hidden;
+    overflow: hidden;
 }
 
+/* Configura el marco del mapa (iframe) con bloque visible, ancho completo, altura de 350px y sin bordes en **index.html**. */
 .map-frame iframe {
-  display: block;
-  width: 100%;
-  height: 350px;
-  border: 0;
+    display: block;
+    width: 100%;
+    height: 350px;
+    border: 0;
 }
 
 /* Tarjetas */
+/* Organiza las cuadrículas de tarjetas de competiciones y noticias en 3 columnas iguales con separación de 16px en **pagina2.html** y **pagina3.html**. */
 .competition-grid,
 .news-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
 }
 
+/* Diseña las tarjetas de competición con disposición flexible, altura mínima de 170px y separación interna en **pagina2.html**. */
 .competition-card {
-  display: flex;
-  gap: 14px;
-  min-height: 170px;
-  margin: 0;
+    display: flex;
+    gap: 14px;
+    min-height: 170px;
+    margin: 0;
 }
 
+/* Crea un círculo contenedor fijo de 40x40px para las siglas de países o marcas en las tarjetas de competición de **pagina2.html**. */
 .competition-mark {
-  display: flex;
-  width: 40px;
-  height: 40px;
-  flex: 0 0 40px;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  border-radius: 50%;
-  color: #795f10;
-  font-weight: bold;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border-radius: 50%;
+    color: #795f10;
+    font-weight: bold;
 }
 
+/* Elimina el margen inferior del último párrafo dentro de las tarjetas de competición en **pagina2.html**. */
 .competition-card p:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
+/* Estiliza las etiquetas de datos en vivo ("live-pill") con bordes redondeados y colores destacados en tablas o encabezados de **pagina2.html**. */
 .live-pill {
-  padding: 5px 9px;
-  border-radius: 20px;
-  color: #795f10;
-  font-weight: bold;
+    padding: 5px 9px;
+    border-radius: 20px;
+    color: #795f10;
+    font-weight: bold;
 }
 
+/* Configura las tarjetas de noticias con desbordamiento oculto, sin márgenes y sin relleno inicial en **pagina3.html**. */
 .news-card {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
+/* Diseña el área gráfica superior de las tarjetas de noticias con fondo oscuro y centrado flexible de texto en **pagina3.html**. */
 .news-art {
-  display: flex;
-  min-height: 145px;
-  align-items: center;
-  justify-content: center;
-  background: #222;
-  color: #fff;
-  font-weight: bold;
+    display: flex;
+    min-height: 145px;
+    align-items: center;
+    justify-content: center;
+    background: #222;
+    color: #fff;
+    font-weight: bold;
 }
 
+/* Aplica un fondo dorado y texto oscuro a las ilustraciones de noticias de tipo destacado (.art-gold) en **pagina3.html**. */
 .art-gold {
-  background: #d4af37;
-  color: #111;
+    background: #d4af37;
+    color: #111;
 }
 
+/* Aplica un fondo ámbar oscuro a las ilustraciones secundarias de tarjetas de noticias (.art-amber) en **pagina3.html**. */
 .art-amber {
-  background: #8a7026;
+    background: #8a7026;
 }
 
+/* Define el relleno interior (padding) para la sección de texto de las tarjetas de noticias (.news-copy) en **pagina3.html**. */
 .news-copy {
-  padding: 18px;
+    padding: 18px;
 }
 
+/* Añade un relleno horizontal y vertical pequeño a las etiquetas de código de los atributos HTML en **pagina3.html**. */
 .attribute-list code {
-  padding: 2px 5px;
+    padding: 2px 5px;
 }
 
+/* Añade un borde superior y espaciado para la sección de referencias externas en la página de noticias (**pagina3.html**). */
 .external-reference {
-  padding-top: 12px;
-  border-top: 1px solid #e5dfcf;
+    padding-top: 12px;
+    border-top: 1px solid #e5dfcf;
 }
 
+/* Aplica un margen inferior específico al bloque de avance de noticias (.news-teaser) en la página principal (**index.html**). */
 .news-teaser {
-  margin-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 /* Pie y plantilla */
+/* Define una altura mínima de 72px y separación flexible para los elementos internos del pie de página (.site-footer) en todas las páginas. */
 .footer-inner {
-  min-height: 72px;
-  gap: 12px;
+    min-height: 72px;
+    gap: 12px;
 }
 
+/* Estiliza las tarjetas de marcador de posición (placeholder) con borde discontinuo y fondo claro en la plantilla HTML (**plantilla.html**). */
 .placeholder-card {
-  margin-top: 18px;
-  padding: 18px;
-  border: 1px dashed #c9b979;
-  background: #fffdf7;
+    margin-top: 18px;
+    padding: 18px;
+    border: 1px dashed #c9b979;
+    background: #fffdf7;
 }
 
 /* Ajuste para móviles */
+/* Configura reglas responsivas para pantallas de ancho igual o menor a 700px, adaptando cabeceras, cuadrículas y tablas en todo el sitio web. */
 @media (max-width: 700px) {
-  .header-inner,
-  .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 12px 0;
-  }
 
-  .nav-inner {
-    width: 100%;
-    justify-content: space-around;
-  }
+    .header-inner,
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 0;
+    }
 
-  .content-layout,
-  .competition-grid,
-  .news-grid {
-    grid-template-columns: 1fr;
-  }
+    .nav-inner {
+        width: 100%;
+        justify-content: space-around;
+    }
 
-  .hero {
-    min-height: 260px;
-    padding: 28px;
-  }
+    .content-layout,
+    .competition-grid,
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
 
-  .hero h1 {
-    font-size: 2.3rem;
-  }
+    .hero {
+        min-height: 260px;
+        padding: 28px;
+    }
 
-  .hero-ball {
-    right: -25px;
-    font-size: 9rem;
-  }
+    .hero h1 {
+        font-size: 2.3rem;
+    }
 
-  .page-heading h1 {
-    font-size: 2rem;
-  }
+    .hero-ball {
+        right: -25px;
+        font-size: 9rem;
+    }
 
-  .panel {
-    padding: 18px;
-  }
+    .page-heading h1 {
+        font-size: 2rem;
+    }
 
-  .section-heading,
-  .news-teaser {
-    align-items: flex-start;
-    flex-direction: column;
-  }
+    .panel {
+        padding: 18px;
+    }
 
-  th,
-  td {
-    padding: 9px;
-    white-space: nowrap;
-  }
+    .section-heading,
+    .news-teaser {
+        align-items: flex-start;
+        flex-direction: column;
+    }
 
-  .map-frame iframe {
-    height: 280px;
-  }
+    th,
+    td {
+        padding: 9px;
+        white-space: nowrap;
+    }
+
+    .map-frame iframe {
+        height: 280px;
+    }
 }
