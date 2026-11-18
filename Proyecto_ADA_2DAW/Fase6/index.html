@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Noticias, resultados y actualidad del fútbol en InfoFut.">
+  <title>Inicio | InfoFut</title>
+  <link rel="icon" href="InfoFut_Logo.png" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="alternate stylesheet" href="css/alternativo.css" title="Estadio Nocturno">
+  <style>
+    /* Punto 2: Estilos internos y Punto 5: Redefinición */
+    .eyebrow {
+      color: #111; /* Redefine el color dorado #795f10 del CSS externo */
+      letter-spacing: 1px;
+    }
+
+    caption{
+      font-weight: bold;
+      color: #171717;
+    }
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="InfoFut, ir al inicio">
+        <img src="InfoFut_Logo.png" alt="Logotipo de InfoFut" width="44" height="44">
+        <span>Info<span class="brand-accent">Fut</span></span>
+      </a>
+      <!-- Punto 1 y 5 -->
+      <p class="tagline" style="color: #d4af37; font-style: italic;">El fútbol, al día</p>
+    </div>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <div class="nav-inner">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="pagina2.html">Fútbol</a>
+        <a href="pagina3.html">Noticias</a>
+        <a href="#partidos">Partidos</a>
+      </div>
+    </nav>
+    <div class="score-strip" aria-label="Últimos resultados destacados">
+      <span class="score-label">MARCADOR · EJEMPLO</span>
+      <span>Real Madrid <strong>2–1</strong> Sevilla</span>
+      <span>Barcelona <strong>1–0</strong> Valencia</span>
+      <span>Atleti <strong>0–0</strong> Girona</span>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">PASIÓN POR EL FÚTBOL</p>
+        <h1>Todo el fútbol,<br><span>en un mismo lugar.</span></h1>
+        <p>Marcadores, historias y actualidad para que no te pierdas nada de lo que pasa dentro y fuera del campo.</p>
+        <a class="button-link" href="pagina3.html">Leer las últimas noticias</a>
+      </div>
+      <div class="hero-ball" aria-hidden="true">⚽</div>
+    </section>
+
+    <div class="content-layout">
+      <div class="primary-content">
+        <section class="panel" id="partidos">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">LA JORNADA</p>
+              <h2>Últimos resultados</h2>
+            </div>
+            <a href="pagina2.html">Ver competiciones <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <caption>Resultados destacados de la jornada</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Jornada</th>
+                  <th scope="col">Partido</th>
+                  <th scope="col">Resultado</th>
+                  <th scope="col">Competición</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="rowgroup" rowspan="2">Jornada 12</th>
+                  <td>Real Madrid – Sevilla</td>
+                  <td><strong>2 – 1</strong></td>
+                  <td>LaLiga</td>
+                </tr>
+                <tr>
+                  <td>Barcelona – Valencia</td>
+                  <td><strong>1 – 0</strong></td>
+                  <td>LaLiga</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th scope="row">Jornada 11</th>
+                  <td>Atlético – Girona</td>
+                  <td><strong>0 – 0</strong></td>
+                  <td>LaLiga</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr class="table-note">
+                  <td colspan="4">Marcadores de ejemplo con fines informativos.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel" aria-labelledby="featured-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">PARA LOS AFICIONADOS</p>
+              <h2 id="featured-title">El fútbol también se vive en las gradas</h2>
+            </div>
+          </div>
+          <p>Explora la ubicación de uno de los estadios más emblemáticos de España.</p>
+          <div class="map-frame">
+            <iframe
+              src="https://maps.google.com/maps?q=Estadio%20Santiago%20Bernab%C3%A9u&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              title="Mapa del estadio Santiago Bernabéu"
+              width="800"
+              height="360"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+          </div>
+        </section>
+      </div>
+
+      <aside class="sidebar">
+        <section class="panel">
+          <p class="eyebrow">EN INFOFUT</p>
+          <h2>El partido no termina en el pitido final</h2>
+          <p>Consulta estadísticas, sigue a tus equipos y descubre las historias que hacen especial cada jornada.</p>
+          <a class="text-link" href="pagina2.html">Explorar el fútbol <span aria-hidden="true">→</span></a>
+        </section>
+        <section class="panel accent-panel">
+          <p class="eyebrow">PLANTILLA DEL PROYECTO</p>
+          <h2>¿Cómo está construida esta web?</h2>
+          <p>Las páginas comparten cabecera, navegación y pie de página.</p>
+          <a class="text-link" href="plantilla.html" title="Abrir la plantilla HTML del proyecto">Ver plantilla <span aria-hidden="true">→</span></a>
+        </section>
+      </aside>
+    </div>
+
+    <section class="panel news-teaser">
+      <div>
+        <p class="eyebrow">FUERA DEL TERRENO DE JUEGO</p>
+        <h2>Las historias de la semana</h2>
+        <p>Fichajes, actualidad y momentos destacados del fútbol.</p>
+      </div>
+      <a class="button-link" href="pagina3.html">Ir a noticias</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><strong>InfoFut</strong> · Tu punto de encuentro con el fútbol.</p>
+      <p>Proyecto educativo · <a href="pagina3.html#atributos">Guía de atributos HTML</a></p>
+    </div>
+  </footer>
+</body>
+</html>

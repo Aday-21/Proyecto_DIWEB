@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Consulta equipos y competiciones de fútbol en InfoFut.">
+  <title>Fútbol y competiciones | InfoFut</title>
+  <link rel="icon" href="InfoFut_Logo.png" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="alternate stylesheet" href="css/alternativo.css" title="Estadio Nocturno">
+  <style>
+    /* Punto 2: Estilos internos y Punto 5: Redefinición */
+    .eyebrow {
+      color: #111;
+      /* Redefine el color dorado #795f10 del CSS externo */
+      letter-spacing: 1px;
+    }
+
+    caption {
+      font-weight: bold;
+      color: #171717;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="InfoFut, ir al inicio">
+        <img src="InfoFut_Logo.png" alt="Logotipo de InfoFut" width="44" height="44">
+        <span>Info<span class="brand-accent">Fut</span></span>
+      </a>
+      <!-- Punto 1 y 5 -->
+      <p class="tagline" style="color: #d4af37; font-style: italic;">El fútbol, al día</p>
+    </div>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <div class="nav-inner">
+        <a href="index.html">Inicio</a>
+        <a href="pagina2.html" aria-current="page">Fútbol</a>
+        <a href="pagina3.html">Noticias</a>
+        <a href="index.html#partidos">Partidos</a>
+      </div>
+    </nav>
+    <div class="score-strip" aria-label="Últimos resultados destacados">
+      <span class="score-label">MARCADOR · EJEMPLO</span>
+      <span>Real Madrid <strong>2–1</strong> Sevilla</span>
+      <span>Barcelona <strong>1–0</strong> Valencia</span>
+      <span>Atleti <strong>0–0</strong> Girona</span>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-heading">
+      <p class="eyebrow">LIGAS Y EQUIPOS</p>
+      <h1>El fútbol, competición a competición</h1>
+      <p>Un vistazo a algunas de las principales competiciones europeas y a los equipos que las protagonizan.</p>
+    </section>
+
+    <section class="competition-grid" aria-label="Competiciones destacadas">
+      <article class="competition-card">
+        <p class="competition-mark">ES</p>
+        <div>
+          <p class="eyebrow">ESPAÑA</p>
+          <h2>LaLiga</h2>
+          <p>La emoción de la máxima categoría del fútbol español, jornada tras jornada.</p>
+        </div>
+        <span class="card-arrow" aria-hidden="true">↗</span>
+      </article>
+      <article class="competition-card">
+        <p class="competition-mark">UK</p>
+        <div>
+          <p class="eyebrow">INGLATERRA</p>
+          <h2>Premier League</h2>
+          <p>Intensidad, estadios históricos y grandes rivalidades en cada partido.</p>
+        </div>
+        <span class="card-arrow" aria-hidden="true">↗</span>
+      </article>
+      <article class="competition-card">
+        <p class="competition-mark">EU</p>
+        <div>
+          <p class="eyebrow">EUROPA</p>
+          <h2>Champions League</h2>
+          <p>Los mejores clubes europeos se encuentran en la competición continental.</p>
+        </div>
+        <span class="card-arrow" aria-hidden="true">↗</span>
+      </article>
+    </section>
+
+    <div class="content-layout">
+      <section class="panel primary-content">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">CLASIFICACIÓN DE EJEMPLO</p>
+            <h2>LaLiga: primeros puestos</h2>
+          </div>
+          <span class="live-pill">DATOS DE EJEMPLO</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <caption>Clasificación ilustrativa, no oficial</caption>
+            <thead>
+              <tr>
+                <th scope="col">Pos.</th>
+                <th scope="col">Equipo</th>
+                <th scope="col">PJ</th>
+                <th scope="col">PG</th>
+                <th scope="col">Puntos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Real Madrid</td>
+                <td>12</td>
+                <td>9</td>
+                <td><strong>28</strong></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Barcelona</td>
+                <td>12</td>
+                <td>8</td>
+                <td><strong>26</strong></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Atlético de Madrid</td>
+                <td>12</td>
+                <td>7</td>
+                <td><strong>23</strong></td>
+              </tr>
+              <tr class="table-note">
+                <td colspan="5">Datos ficticios elaborados únicamente como ejemplo para este proyecto.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <aside class="sidebar">
+        <section class="panel">
+          <p class="eyebrow">SABÍAS QUE...</p>
+          <h2>Cada jornada cuenta</h2>
+          <p>Una victoria, un empate o un gol pueden cambiar el rumbo de una clasificación. Sigue los resultados en
+            nuestra <a href="index.html#partidos">página de inicio</a>.</p>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><strong>InfoFut</strong> · Tu punto de encuentro con el fútbol.</p>
+      <p>Proyecto educativo · <a href="pagina3.html#atributos">Guía de atributos HTML</a></p>
+    </div>
+  </footer>
+</body>
+
+</html>
